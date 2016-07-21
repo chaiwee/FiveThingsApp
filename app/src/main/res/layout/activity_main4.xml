@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/sleep1"
+        android:scaleType="centerCrop"
+        android:id="@+id/sleep_image_view"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 3:"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="36sp"
+        android:padding="8dp"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sleep for at least 6 hours a day."
+        android:id="@+id/get_enough_sleep_text_view"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:paddingLeft="12dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="180dp"
+        android:layout_marginLeft="16dp"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:background="#FF7043"
+        android:padding="16dp"
+        android:onClick="next3"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginLeft="53dp"
+        android:layout_marginBottom="16dp"/>
+
+
+
+</RelativeLayout>

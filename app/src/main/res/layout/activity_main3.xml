@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fruits_vegetables"
+        android:scaleType="centerCrop"
+        android:layout_above="@+id/balanced_diet_text_view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 2:"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="36sp"
+        android:padding="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Eat a balanced diet that contains each of the food groups."
+        android:id="@+id/balanced_diet_text_view"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="57dp"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/next2_button"
+        android:background="#FF7043"
+        android:padding="16dp"
+        android:onClick="next2"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>

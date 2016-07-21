@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/no_beer_no_cigarette"
+        android:scaleType="center"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/no_beer_alcohol_text_view"
+        android:layout_alignStart="@+id/no_beer_alcohol_text_view"
+        android:layout_marginLeft="79dp"
+        android:layout_marginStart="79dp"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 5:"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="36sp"
+        android:padding="8dp"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Say no to alcohol and cigarettes."
+        android:id="@+id/no_beer_alcohol_text_view"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="250dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End"
+        android:id="@+id/end_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="29dp"
+        android:background="#FF7043"
+        android:onClick="back"/>
+
+
+</RelativeLayout>
